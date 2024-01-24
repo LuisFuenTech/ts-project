@@ -1,11 +1,10 @@
+import { IBaseModel } from '../base.model';
 import { ICategory } from '../categories/category.model';
 
 export type Sizes = 'S' | 'M' | 'L' | 'XL';
 
-export interface IProduct {
-  id: string | number;
+export interface IProduct extends IBaseModel {
   title: string;
-  createdAt: Date;
   stock: number;
   size?: Sizes;
   category: ICategory;

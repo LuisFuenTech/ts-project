@@ -4,6 +4,12 @@ addProduct({
   id: 1,
   title: 'macbook',
   createdAt: new Date(),
+  updatedAt: new Date(),
   stock: 90,
-  category: { id: 1, name: 'tech' },
+  category: {
+    id: 1,
+    name: 'tech',
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  },
 });
