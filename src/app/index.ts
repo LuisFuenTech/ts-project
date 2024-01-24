@@ -24,4 +24,8 @@ for (let i = 0; i < 50; i++) {
 console.log(products[products.length - 1]);
 const product = products[0];
 
-//updateProduct(product.id, {});
+updateProduct(product.id, {
+  title: 'new title',
+  description: 'new description',
+  stock: 75,
+});
